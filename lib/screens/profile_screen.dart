@@ -119,7 +119,7 @@ class ProfilePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Saved Recipes',
+                          'Saved Challenges',
                           style:
                               Theme.of(context).textTheme.bodyMedium!.copyWith(
                                     fontWeight: FontWeight.w600,

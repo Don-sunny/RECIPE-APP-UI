@@ -6,13 +6,15 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 class BottomNavBar extends StatefulWidget {
+  const BottomNavBar({super.key});
+
   @override
-  _BottomNavBarState createState() => _BottomNavBarState();
+  BottomNavBarState createState() => BottomNavBarState();
 }
 
-class _BottomNavBarState extends State<BottomNavBar> {
+class BottomNavBarState extends State<BottomNavBar> {
   int _page = 0;
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+  GlobalKey<CurvedNavigationBarState> bottomNavigationKey = GlobalKey();
 
   List<Widget> _pages = [ProfilePage()];
 
@@ -20,7 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: CurvedNavigationBar(
-          key: _bottomNavigationKey,
+          key: bottomNavigationKey,
           index: 0,
           items: [
             CurvedNavigationBarItem(
